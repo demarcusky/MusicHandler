@@ -21,7 +21,7 @@ Main functionality is called after all initial data is loaded.
 */
 void onMessage(SKSE::MessagingInterface::Message* msg) {
     if (msg->type == SKSE::MessagingInterface::kDataLoaded) {
-
+        MusicHandler::initialise();
     }
 }
 
